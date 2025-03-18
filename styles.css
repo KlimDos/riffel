@@ -1,0 +1,273 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+    background: transparent;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.menu.scrolled {
+    background: black;
+}
+
+/* Logo */
+.logo {
+    max-width: 40px;
+    height: auto;
+}
+
+/* Navigation */
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Button */
+.btn {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ffaa00;
+}
+
+/* Fixed Footer */
+/* Fixed Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+/* Call text aligned to left */
+.footer-call-text {
+    margin-right: auto; /* Pushes social icons to the right */
+}
+
+/* Social Icons Container (Stacked Vertically) */
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+/* Social Icons Container (Stacked Vertically) */
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 80px;
+    margin-right: 30px;
+}
+
+.footer-social a {
+    display: block;
+}
+
+/* Social Icons */
+.footer-social img {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Content Container */
+.content {
+    width: 100%;
+    padding-top: 50px; /* Offset for fixed menu */
+}
+
+/* Section Box */
+.box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+/* Backgrounds */
+.box-1 {
+    background: url('https://static.tildacdn.com/tild6165-6538-4838-b739-643331303761/_-002-min.png') center/cover no-repeat;
+}
+
+.box-3 {
+    background: url('https://source.unsplash.com/1600x900/?mountains,sky') center/cover no-repeat;
+}
+
+/* Video Background */
+.box-2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw; 
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Dark Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Text Content */
+.text-container {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    max-width: 80%;
+}
+
+.text-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+}
+
+/* 🔹 Div 1 Styling */
+.div-one {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://static.tildacdn.com/tild6165-6538-4838-b739-643331303761/_-002-min.png') center/cover no-repeat;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    color: white;
+    padding: 80px;
+}
+
+/* Dark overlay */
+.div-one::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Content wrapper */
+.div-one-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+/* Logo */
+.div-one-logo {
+    max-width: 300px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+}
+
+/* Text */
+.div-one h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Chat Box */
+.div-one-message {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons */
+.div-one-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.div-one-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.div-one-button-blue {
+    background: #4A90E2;
+    color: white;
+}
+
+.div-one-button-red {
+    background: #E4002B;
+    color: white;
+}
